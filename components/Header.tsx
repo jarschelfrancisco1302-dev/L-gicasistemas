@@ -6,6 +6,7 @@ export const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
+    { name: 'Sobre', href: '#about' },
     { name: 'Serviços', href: '#services' },
     { name: 'Diferenciais', href: '#features' },
     { name: 'Contato', href: '#contact' },
