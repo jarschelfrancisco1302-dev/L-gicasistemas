@@ -78,20 +78,20 @@ export const Services: React.FC = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {services.map((service) => (
               <div key={service.title} className="pt-6 group">
-                <div className="flow-root bg-white rounded-lg px-6 pb-8 h-full hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-gray-100 relative">
+                <div className="flow-root bg-brand-dark rounded-lg px-6 pb-8 h-full hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 border border-slate-700 relative shadow-lg">
                   {/* Decorative background - contained and clipped */}
                   <div className="absolute inset-0 rounded-lg overflow-hidden pointer-events-none">
-                    <div className="absolute top-0 right-0 w-24 h-24 bg-brand-accent/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-bl-full -mr-4 -mt-4 transition-transform group-hover:scale-150"></div>
                   </div>
                   
                   <div className="-mt-6 relative">
                     <div>
-                      <span className="inline-flex items-center justify-center p-3 bg-brand-dark rounded-md shadow-lg group-hover:bg-brand-accent transition-colors duration-300">
+                      <span className="inline-flex items-center justify-center p-3 bg-brand-accent rounded-md shadow-lg group-hover:bg-brand-blue transition-colors duration-300">
                         <service.icon className="h-6 w-6 text-white" aria-hidden="true" />
                       </span>
                     </div>
-                    <h3 className="mt-8 text-xl font-bold text-gray-900 tracking-tight">{service.title}</h3>
-                    <p className="mt-4 text-base text-gray-500 leading-relaxed">
+                    <h3 className="mt-8 text-xl font-bold text-white tracking-tight">{service.title}</h3>
+                    <p className="mt-4 text-base text-gray-300 leading-relaxed">
                       {service.description}
                     </p>
                   </div>
